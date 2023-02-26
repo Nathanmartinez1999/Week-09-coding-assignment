@@ -4,37 +4,438 @@
 <head>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
-<div id="carouselExample" class="carousel slide">
+<div class="container-fluid col-sm">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: wheat;">
+        <div class="container-fluid">
+            <a class="navbar-brand col-sm" href="#">
+                <img src="https://vectorflags.s3.amazonaws.com/flags/us-nm-wave-01.png" alt="Logo" width="60"
+                    height="54" class="d-inline-block align-text-top">
+                New Mexico State Parks</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="state lakes.html" href="#">State Lakes</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle col-sm" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Links
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Camping Locations</a></li>
+                            <li><a class="dropdown-item" href="#">Fishing Locations</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Social Links</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div id="carouselExampleAutoPlaying" class="carousel slide" data-bs-ride="carousel" style=>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="https://www.touropia.com/gfx/b/2020/11/white_sands_national_park_np.jpg" class="d-block w-100"
-                alt="picture 1">
+            <img src="https://www.touropia.com/gfx/b/2020/11/white_sands_national_park_np.jpg" height="500px"
+                class="d-block w-100" alt="picture 1">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>White Sands National Park</h5>
+                <P>Alamorgordo, New Mexico</P>
+            </div>
         </div>
         <div class="carousel-item">
             <img src="https://cdn.aarp.net/content/dam/aarp/travel/national-parks/2022/12/1140-carlsbad-caverns-interior.jpg"
-                class="d-block w-100" alt="picture 2">
+                height="500px" class="d-block w-100" alt="picture 2">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Carlsbad Caverans National Park</h5>
+                <p>Carlsbad, New Mexico</p>
+            </div>
         </div>
         <div class="carousel-item">
-            <img src="https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,h_430,q_75,w_640/v1/clients/newmexico/navajo_lake_camping_d2b075bd-6ab1-400c-933a-838b4c5ab7be.jpg"
+            <img src="https://www.austinchronicle.com/binary/364c/cols_daytrips-1.jpg" height="500px"
                 class="d-block w-100" alt="picture 3">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Kasha-Katuwe Tent Rocks National Monument</h5>
+                <p>Cochiti Pueblo, New Mexico</p>
+            </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoPlaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoPlaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">next</span>
+        </button>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">next</span>
-    </button>
 
+    <style>
+        #border {
+            border-style: solid;
+            border-color: black;
+            padding: 4px;
+            margin: 4px;
+        }
+    </style>
 
     <body>
-
         <script src="node_modules/jquery/dist/jquery.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-        <div>
+        <h3 style="text-align: center; text-decoration: underline;">New Mexico State Park History</h3>
+        <p></p>
+        <div class="grid text-center col-sm" style="--bs-columns: 10; --bs-gap: 1rem;">
+            <div id="border" class="g-col-6 row" style="background-color: wheat;">
+                <p style="font-size: large;">New Mexico was founded as a state in the year 1912 it was the 47th state to
+                    recieve its state hood.
+                    New mexico is the 5th largest state in the United States </p>
+            </div>
         </div>
+
+        <div id="border" class="container-fluid">
+            <div class="row">
+                <div id="border" class="col-sm" style="background-color: wheat;">
+                    <table class="table table-bordered" style="color: black; border-color: white;">
+                        <tr>
+                            <th>Park Name</th>
+                            <th>County Name</th>
+                            <th>Size/sq acre</th>
+                            <th>Year Established</th>
+                        </tr>
+                        <tr>
+                            <td>"Hyde Memorial State Park"</td>
+                            <td>Santa Fe</td>
+                            <td>350</td>
+                            <td>1938</td>
+                        </tr>
+                        <tr>
+                            <td>"City Of Rocks State Park"</td>
+                            <td>Grant</td>
+                            <td>1,230</td>
+                            <td>1953</td>
+                        </tr>
+                        <tr>
+                            <td>"Pancho Villa State Park"</td>
+                            <td>Luna</td>
+                            <td>60</td>
+                            <td>1961</td>
+                        </tr>
+                        <tr>
+                            <td>"Oasis Sate park"</td>
+                            <td>Roosevelt</td>
+                            <td>193</td>
+                            <td>1961</td>
+                        </tr>
+                        <tr>
+                            <td>"Rockhound State Park"</td>
+                            <td>Luna</td>
+                            <td>1,100</td>
+                            <td>1965</td>
+                        </tr>
+                        <tr>
+                            <td>"Sugarite Canyon State Park"</td>
+                            <td>Colfax</td>
+                            <td>6,700</td>
+                            <td>1966</td>
+                        </tr>
+                        <tr>
+                            <td>"Villanueva State Park</td>
+                            <td>San Miguel</td>
+                            <td>1,600</td>
+                            <td>1967</td>
+                        </tr>
+
+                        <tr>
+                            <td>"Living Desert Zoo And Gardens State Park"</td>
+                            <td>Eddy</td>
+                            <td>1,500</td>
+                            <td>1967</td>
+                        </tr>
+                        <tr>
+                            <td>"Coyote Creek State Park"</td>
+                            <td>Mora</td>
+                            <td>462</td>
+                            <td>1969</td>
+                        </tr>
+                        <tr>
+                            <td>"Percha dam Sate Park"</td>
+                            <td>Sierra</td>
+                            <td>80</td>
+                            <td>1970</td>
+                        </tr>
+                        <tr>
+                            <td>"Leasburg Dam State Park"</td>
+                            <td>Leasburg</td>
+                            <td>293</td>
+                            <td>1971</td>
+                        </tr>
+                        <tr>
+                            <td>"Manzano Sate Park"</td>
+                            <td>Torrance</td>
+                            <td>160</td>
+                            <td>1973</td>
+                        </tr>
+                        <tr>
+                            <td>"Cimarron Canyon State Park"</td>
+                            <td>Colfax</td>
+                            <td>378</td>
+                            <td>1979</td>
+                        </tr>
+                        <tr>
+                            <td>"Oliver Lee Memorial State Park"</td>
+                            <td>Otero</td>
+                            <td>640 </td>
+                            <td>1980</td>
+                        </tr>
+                        <tr>
+                            <td>"Rio Grande Nature Center State Park"</td>
+                            <td>Bernalillo</td>
+                            <td>38</td>
+                            <td>1982</td>
+                        </tr>
+                        <tr>
+                            <td>"Mesilla Valley Bosque State Park"</td>
+                            <td>Dona Ana</td>
+                            <td>305</td>
+                            <td>2003</td>
+                        </tr>
+                        <tr>
+                            <td>"Vietnam Veterans Memorial Sate Park"</td>
+                            <td>Colfax</td>
+                            <td>8,500</td>
+                            <td>2005</td>
+                        </tr>
+                        <tr>
+                            <td>"Cerrillos Hills State Park"</td>
+                            <td>Santa Fe</td>
+                            <td>1,116</td>
+                            <td>2009</td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="border" class="col-sm" style="background-color: wheat;">
+                    <h5>Map Of state Parks</h5>
+                    <img height="350px" src="https://databayou.com/newmexico/images/newmexico.jpg">
+
+                    <img height="350px"
+                        src="https://i.pinimg.com/originals/0e/39/75/0e39751d7615ce0f323b8cbecab4a6cd.gif">
+                </div>
+            </div>
+            <form>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text"></div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <div>
+                <div class="card" style="width: 25rem; background-color: wheat;">
+                    <img src="https://www.campgroundviews.com/wp-content/uploads/job-manager-uploads/0/2015/12/sign.jpg"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">"Hyde Memorial State park"</h5>
+                        <p class="card-text">Hyde memorial state park is the oldest state park in new mexico it was
+                            founded
+                            in 1938, it is located at
+                            the base of the sangre de cristo mountain range in new mexicos capital city santa fe, which
+                            is
+                            also the
+                            oldest state capital in the united states</p>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="card" style="width: 25rem; background-color: wheat;">
+                        <img src="https://i0.wp.com/newmexiconomad.com/wp-content/uploads/2018/12/city-of-rocks-6.jpg?resize=696%2C436&ssl=1"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">"City of Rocks State park"</h5>
+                            <p class="card-text">City of rocks state park was founded in the year 1953, it is a large
+                                open
+                                park thet has tall round and flat rock formation that can stand up to 40ft tall.</p>
+                        </div>
+                        <div class="card" style="width: 25rem; background-color: wheat;">
+                            <img src="https://cnm-news.com/wp-content/uploads/2022/01/Pancho-Villa-sign.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">"Pancho Villa State Park"</h5>
+                                <p class="card-text">Pancho villa state park is located less then 5 miles from the
+                                    United
+                                    States and Mexico border, The state park is named after famed spanish leader pancho
+                                    villa who the state park is named after, he conquerd the city in 1916 and put it
+                                    under
+                                    spanish control.</p>
+                            </div>
+                            <div class="card" style="width: 25rem; background-color: wheat;">
+                                <img src="https://images.squarespace-cdn.com/content/v1/58b066e83e00be6efbd33633/7110a929-48d1-41fe-acb4-2b617561dd00/oasis+state+park+sign.JPG"
+                                    class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">"Oasis State Park"</h5>
+                                    <p class="card-text">Oasis state park is located 5 miles north of portales, NM. it
+                                        was
+                                        founded in the year 1961 and is know for the samll lake in the park that is good
+                                        for
+                                        fising and swimming.</p>
+                                </div>
+
+                                <div class="card" style="width: 25rem; background-color: wheat;">
+                                    <img src="https://nmvfo.org/wp-content/uploads/2022/06/Sugarite.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">"Sugarite State Park"</h5>
+                                        <p class="card-text">Sugarite state park, is the only new mexico state park that
+                                            extends into colorado, it is nesseld along the base of the rockies and is
+                                            about 20 miles north of raton,NM. it was founded in the year 1966</p>
+                                    </div>
+                                    <div class="card" style="width: 25rem; background-color: wheat;">
+                                        <img src="https://lh3.googleusercontent.com/p/AF1QipOUDetDeXRGCnUM08cbUEx-_KUHIwKCOTRyumzL=s680-w680-h510"
+                                            class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">"Rockhound State Park"</h5>
+                                            <p class="card-text">Rockhound state park was founded in the year 1965, and
+                                                is
+                                                know for its large anmound of mineral deposits, you can find such gems
+                                                as
+                                                quartz and geodes as well as many others, the nearst city is Demming, NM
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card" style="width: 25rem; background-color: wheat;">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Official_Scenic_Historic_Marker_Villanueva_State_Park%2C_New_Mexico.jpg"
+                                            class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">"Villanueva State Park"</h5>
+                                            <p class="card-text">Villanueva state park is named after the old new mexico
+                                                village that is nearby, it was founded in the year 1967, and sits along
+                                                the
+                                                banks of the pecos river.</p>
+                                        </div>
+                                        <div class="card" style="width: 25rem; background-color: wheat;">
+                                            <img src="https://geoinfo.nmt.edu/tour/state/coyote_creek/CoyoteCreek-500.jpg"
+                                                class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">""Coyote Creek State Park"</h5>
+                                                <p class="card-text">Coyote creek state park was founded in 1969 and is
+                                                    home to some of the best special trout waters of new mexico, New
+                                                    mexico game and fish have implimented many rules and regulations to
+                                                    fishing the water here to try and protect the massive trout species.
+                                                </p>
+                                            </div>
+                                            <div class="card" style="width: 25rem; background-color: wheat;">
+                                                <img src="https://img1.wsimg.com/isteam/ip/ff9a97ba-e382-4117-afed-c060ec032a4e/Picture30.jpg/:/cr=t:0%25,l:0%25,w:100%25,h:100%25"
+                                                    class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">"Living Desert Zoo and Gardens State Park"
+                                                    </h5>
+                                                    <p class="card-text">This state park is loacted south of carlsbad in
+                                                        the chihuahuan desert, it shows visitors many desert creaturs
+                                                        and wildlife as well as plants in thier natural habitat</p>
+                                                </div>
+                                                <div class="card" style="width: 25rem; background-color: wheat;">
+                                                    <img src="https://i.ytimg.com/vi/zEQQOZxAr8c/maxresdefault.jpg"
+                                                        class="card-img-top" alt="...">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">"Leasburg Dam State Park"</h5>
+                                                        <p class="card-text">leasburg dam state park is located along
+                                                            the rio grande river and is 15 miles south of las cruces,
+                                                            NM. it was founded in the year 1971</p>
+                                                    </div>
+                                                    <div class="card" style="width: 25rem; background-color: wheat;">
+                                                        <img src="https://newmexicostateparks.reserveamerica.com/webphotos/NM/pid430018/0/540x360.jpg"
+                                                            class="card-img-top" alt="...">
+                                                        <div class="card-body">
+                                                            <h5 class="card-title">"Manzano State Park"</h5>
+                                                            <p class="card-text">Manzano state park was founded in 1973
+                                                                and is know for its big game deer and doe hunting, the
+                                                                closest city to the manzano state park is mountainair,
+                                                                NM </p>
+                                                        </div>
+                                                        <div class="card"
+                                                            style="width: 25rem; background-color: wheat;">
+                                                            <img src="https://assets.simpleviewinc.com/simpleview/image/upload/crm/newmexico/eugenia-oglesby--3477_0EB2E9EE-BDEA-42B4-9532D2943B1EED00_9cd87524-ab4d-4c1a-9bb54e5ea38f54eb.jpg"
+                                                                class="card-img-top" alt="...">
+                                                            <div class="card-body">
+                                                                <h5 class="card-title">"Cimarron Canyon State Park"</h5>
+                                                                <p class="card-text">Cimarron canyon state park is home
+                                                                    to eagles nest lake one of new mexicos biggest
+                                                                    lakes, it is know for great camping spots as well as
+                                                                    fly fishing. it was founded in the year 1979.</p>
+                                                            </div>
+                                                            <div class="card"
+                                                                style="width: 25rem; background-color: wheat;">
+                                                                <img src="https://www.staplesconnect.com/images/OliverLeeMemorialStatePark/1638327490915-Oliver_Lee_Sign.jpg"
+                                                                    class="card-img-top" alt="...">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">"Oliver Lee State Park"</h5>
+                                                                    <p class="card-text">Oliver lee state park is named
+                                                                        after famous new mexico gun fighter Oliver lee
+                                                                        who settled here near the end of his life, a
+                                                                        ranch house of his still sits on the land of the
+                                                                        state park still today.</p>
+                                                                </div>
+                                                                <div class="card"
+                                                                    style="width: 25rem; background-color: wheat;">
+                                                                    <img src="https://questanews.com/wp-content/uploads/2021/10/AFVetMem-1.jpg"
+                                                                        class="card-img-top" alt="...">
+                                                                    <div class="card-body">
+                                                                        <h5 class="card-title">"Vietnam Memorial state
+                                                                            Park"
+                                                                        </h5>
+                                                                        <p class="card-text">This state park was named
+                                                                            and
+                                                                            established in honor of the veterans who
+                                                                            served
+                                                                            in the war, in 2017 control of the state
+                                                                            park
+                                                                            was transford to the departmnet of veternan
+                                                                            services.</p>
+                                                                    </div>
+                                                                    <div class="card"
+                                                                        style="width: 25rem; background-color: wheat;">
+                                                                        <img src="https://i0.wp.com/laurendanner.com/wp-content/uploads/2022/04/IMG_8182rs.jpg?resize=768%2C576&ssl=1"
+                                                                            class="card-img-top" alt="...">
+                                                                        <div class="card-body">
+                                                                            <h5 class="card-title">"Cerrillos Hills
+                                                                                State
+                                                                                Park"</h5>
+                                                                            <p class="card-text">Cerrillos hills state
+                                                                                park
+                                                                                is new mexicos newest state park it was
+                                                                                founded in 2009 and is settled in an old
+                                                                                minning valley where you can find hiking
+                                                                                paths that take you along old mines and
+                                                                                gem
+                                                                                sites. </p>
+                                                                        </div>
+                                                                    </div>
+
+
+
+
 
     </body>
 
